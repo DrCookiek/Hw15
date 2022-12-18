@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <title>Project1</title>
+    <title>Products</title>
   </head>
-  <body>
+  <body onload="onLoad()">
     <div class="topnav">
       <div class="icon">
         <img
           src="https://cdn.discordapp.com/attachments/292294870649798677/1053445660046786641/Konstore.jpg"
         />
       </div>
-      <a class="active" href="#home">Home</a>
-      <a href="http://127.0.0.1:5500/allproducts.html">All-Products</a>
+      <a href="http://127.0.0.1:5500/index.html#about">Home</a>
+      <a class="active" href="http://127.0.0.1:5500/allproducts.html"
+        >All-Products</a
+      >
       <a href="http://127.0.0.1:5500/about.html">About</a>
       <a href="http://127.0.0.1:5500/contact.html">Contact</a>
       <a href="http://127.0.0.1:5500/wishList.html">♥Wish-List</a>
@@ -38,48 +34,7 @@
         </form>
       </div>
     </div>
-    <br />
-    <h2>Welcome to Karin's Pet Store:</h2>
-    <div class="banner">
-      <div class="welcome">
-        <img
-          src="https://cdn.discordapp.com/attachments/292294870649798677/1053445660046786641/Konstore.jpg"
-        />
-      </div>
-      <div class="banner-right">
-        <div class="main">
-          <p>Hot Items:</p>
-        </div>
-        <br />
-        <div class="card hot">
-          <img
-            src="https://i5.walmartimages.com/asr/13c2ee1c-66c6-4ad1-8a08-a7040d55c1d1.a69c725345b1e3985a97b46117c5f1f1.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
-          />
-          <p>Frog Costume</p>
-          <p>costs 5$</p>
-          <button onclick="addToCart(7)">Add To Cart</button>
-          <button onclick="addToWish(7)">♥</button>
-        </div>
-        <div class="card hot">
-          <img
-            src="https://img.joomcdn.net/a3d1fe6c5e57ff51238e99a27e9cd5e767e5742b_original.jpeg"
-          />
-          <p>Bunny hat</p>
-          <p>costs 4$</p>
-          <button onclick="addToCart(2)">Add To Cart</button>
-          <button onclick="addToWish(2)">♥</button>
-        </div>
-        <div class="card hot">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0235/1965/8061/products/cat_pirate_costume_250x250@2x.jpg?v=1569066405"
-          />
-          <p>Pirate Costume</p>
-          <p>costs 15$</p>
-          <button class="button" onclick="addToCart(6)">Add To Cart</button>
-          <button onclick="addToWish(6)">♥</button>
-        </div>
-      </div>
-    </div>
+    <h2>All Products:</h2>
     <div class="store">
       <!-- <div class="products"> -->
       <div class="products">
@@ -161,18 +116,19 @@
         <button onclick="addToCart(9)">Add To Cart</button>
         <button onclick="addToWish(9)">♥</button>
       </div>
-    <a href="http://127.0.0.1:5500/allproducts.html"
-      ><button class="button1">For More Items></button></a
-    >
-    <br />
-    <div class="footer">
-      <p>first project Karin .K. December 2022©</p>
+      <!-- <div class="products">
+          <img
+            src="https://ae01.alicdn.com/kf/Sce49798910394ad58b80f032638e1137t/Outdoor-Travel-Windproof-Mask-Cap-Dog-Costumes-for-Large-Dogs-Ski-Mask-Dog-Hats-for-Dogs.jpg"
+          />
+          <p>Matching Costume</p>
+          <p>costs 15$</p>
+          <button onclick="addToCart(10)">Add To Cart</button>
+        </div> -->
+      <!-- </div> -->
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+    <div class="footer">
+      <p>first project Karin .K. December 2022</p>
+    </div>
     <script type="text/javascript" src="products.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>

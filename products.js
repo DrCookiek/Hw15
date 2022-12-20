@@ -109,6 +109,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Wizard Costume",
@@ -119,6 +120,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Banana Costume",
@@ -128,6 +130,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Super-dog Costume",
@@ -138,6 +141,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Ghost Costume",
@@ -148,6 +152,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Panda Costume",
@@ -157,6 +162,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Mouse Costume",
@@ -167,6 +173,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "FairyTail Set ",
@@ -177,6 +184,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Sister Costume",
@@ -187,6 +195,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Two Dogs Costume",
@@ -197,6 +206,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Hawaii Costume",
@@ -207,6 +217,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Mermaid Costume",
@@ -216,6 +227,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "dog",
   },
   {
     name: "Cat In Boots Costume",
@@ -226,6 +238,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "cat",
   },
   {
     name: "School-girl Costume",
@@ -235,6 +248,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "parrot",
   },
   {
     name: "Bee Costume",
@@ -245,6 +259,7 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "parrot",
   },
   {
     name: "Mermaid Costume",
@@ -255,6 +270,138 @@ const allProducts = [
     inWishlist: false,
     inCart: 0,
     isFeatured: false,
+    animal: "fish",
+  },
+  {
+    name: "FairyTail Set",
+    price: 20,
+    image:
+      "https://cdn.diys.com/wp-content/uploads/2017/10/Dog-Halloween-Costumes.jpg",
+    id: "p126",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "dog",
+  },
+  {
+    name: "Sausage Costume",
+    price: 7,
+    image:
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-halloween-costumes-1665013602.jpeg?crop=0.669xw:1.00xh;0.252xw,0&resize=640:*",
+    id: "p127",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "dog",
+  },
+  {
+    name: "Satan Costume",
+    price: 7,
+    image: "https://s.hdnux.com/photos/01/30/03/04/23081253/3/1200x0.jpg",
+    id: "p128",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "dog",
+  },
+  {
+    name: "Wizard Costume",
+    price: 12,
+    image:
+      "https://i.etsystatic.com/33908264/r/il/f759eb/4301437849/il_794xN.4301437849_yk1a.jpg",
+    id: "p129",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "cat",
+  },
+  {
+    name: "Santa Costume",
+    price: 3,
+    image:
+      "https://as2.ftcdn.net/v2/jpg/00/27/38/65/1000_F_27386527_CFj1sLhrQnbXNq7jZiCDceWeJvlHCHfF.jpg",
+    id: "p130",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "fish",
+  },
+  {
+    name: "TopHat Costume",
+    price: 4,
+    image:
+      "https://preview.redd.it/qtw37utgt7l71.png?auto=webp&s=954ee37abfe9ea456f8f2c1ceae54dce91ace038",
+    id: "p130",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "fish",
+  },
+  {
+    name: "Pikachu Costume",
+    price: 6,
+    image:
+      "https://i.pinimg.com/originals/c5/29/b6/c529b66ff206ab3f81f97ce5ea3c4d1e.jpg",
+    id: "p131",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "Ferret",
+  },
+  {
+    name: "Wizard Costume",
+    price: 6,
+    image:
+      "https://i.etsystatic.com/13855153/r/il/70f5fa/3327252928/il_570xN.3327252928_b0kv.jpg",
+    id: "p132",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "Ferret",
+  },
+  {
+    name: "Hawaii Costume",
+    price: 4,
+    image:
+      "https://www.themodernferret.com/wp-content/uploads/2019/10/2019-ferret-costume-hula-dance-682x1024.jpg",
+    id: "p133",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "Ferret",
+  },
+  {
+    name: "Sailor Costume",
+    price: 7,
+    image:
+      "https://cdn.shopify.com/s/files/1/0248/4522/1987/files/20220401_5.jpg?v=1648883558",
+    id: "p134",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "Ferret",
+  },
+  {
+    name: "Reindeer Costume",
+    price: 9,
+    image:
+      "https://i.pinimg.com/736x/9b/18/80/9b1880188d83174b76b99e1cfb60f035.jpg",
+    id: "p135",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "rabbit",
+  },
+  {
+    name: "Disney Costume",
+    price: 9,
+    image:
+      "https://i.etsystatic.com/20004728/r/il/1036d5/2175363621/il_fullxfull.2175363621_9dm9.jpg",
+    id: "p136",
+    inWishlist: false,
+    inCart: 0,
+    isFeatured: false,
+    animal: "rabbit",
   },
 ];
 

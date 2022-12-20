@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Wish List</title>
   </head>
-  <body>
+  <body onload="onLoad('wishlist')">
     <div class="topnav">
       <div class="icon">
         <img
@@ -35,8 +35,12 @@
       </div>
     </div>
     <h2>Wish List:</h2>
+    <div class="products-container"></div>
     <div class="footer">
       <p>first project Karin .K. December 2022</p>
     </div>
+    <script src="storage.service.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

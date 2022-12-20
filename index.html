@@ -13,7 +13,7 @@
     />
     <title>Project1</title>
   </head>
-  <body>
+  <body onload="onLoad('featured')">
     <div class="topnav">
       <div class="icon">
         <img
@@ -21,11 +21,12 @@
         />
       </div>
       <a class="active" href="#home">Home</a>
-      <a href="http://127.0.0.1:5500/allproducts.html">All-Products</a>
-      <a href="http://127.0.0.1:5500/about.html">About</a>
-      <a href="http://127.0.0.1:5500/contact.html">Contact</a>
-      <a href="http://127.0.0.1:5500/wishList.html">♥Wish-List</a>
-      <a href="http://127.0.0.1:5500/cart.html">Cart</a>
+      <a href="allproducts.html">All-Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="wishList.html">♥Wish-List</a>
+      <a href="cart.html">Cart</a>
+
       <div class="search-container">
         <form>
           <input
@@ -80,87 +81,7 @@
         </div>
       </div>
     </div>
-    <div class="store">
-      <!-- <div class="products"> -->
-      <div class="products">
-        <img
-          src="https://m.media-amazon.com/images/I/71gICgl0n2L._AC_SL1050_.jpg"
-        />
-        <p>Frog Hat</p>
-        <p>costs 5$</p>
-        <button onclick="addToCart(1)">Add to cart</button>
-        <button onclick="addToWish(1)">♥</button>
-      </div>
-      <div class="products">
-        <img
-          src="https://img.joomcdn.net/a3d1fe6c5e57ff51238e99a27e9cd5e767e5742b_original.jpeg"
-        />
-        <p>Bunny hat</p>
-        <p>costs 4$</p>
-        <button onclick="addToCart(2)">Add To Cart</button>
-        <button onclick="addToWish(2)">♥</button>
-      </div>
-      <div class="products">
-        <img src="https://img.fruugo.com/product/4/39/176972394_max.jpg" />
-        <p>Lion hat</p>
-        <p>costs 6$</p>
-        <button onclick="addToCart(3)">Add To Cart</button>
-        <button onclick="addToWish(3)">♥</button>
-      </div>
-      <div class="products">
-        <img
-          src="https://i5.walmartimages.com/asr/48240b7f-e19d-46df-b52b-93662af0c06b.54d0dbea9b5d0e70679ed159bd70f22a.jpeg"
-        />
-        <p>Chicken hat</p>
-        <p>costs 10$</p>
-        <button onclick="addToCart(4)">Add To Cart</button>
-        <button onclick="addToWish(4)">♥</button>
-      </div>
-      <div class="products">
-        <img
-          src="https://static.wixstatic.com/media/1a82fe_2c3e73407e3e4e6c800d9ab1672e77a5~mv2.jpeg/v1/fill/w_3080,h_2369,al_c,q_85/1a82fe_2c3e73407e3e4e6c800d9ab1672e77a5~mv2.jpeg"
-        />
-        <p>Flower hat</p>
-        <p>costs 3$</p>
-        <button onclick="addToCart(5)">Add To Cart</button>
-        <button onclick="addToWish(5)">♥</button>
-      </div>
-      <div class="products">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0235/1965/8061/products/cat_pirate_costume_250x250@2x.jpg?v=1569066405"
-        />
-        <p>Pirate Full Costume</p>
-        <p>costs 15$</p>
-        <button onclick="addToCart(6)">Add To Cart</button>
-        <button onclick="addToWish(6)">♥</button>
-      </div>
-      <div class="products">
-        <img
-          src="https://i5.walmartimages.com/asr/13c2ee1c-66c6-4ad1-8a08-a7040d55c1d1.a69c725345b1e3985a97b46117c5f1f1.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
-        />
-        <p>Frog Costume</p>
-        <p>costs 5$</p>
-        <button onclick="addToCart(7)">Add To Cart</button>
-        <button onclick="addToWish(7)">♥</button>
-      </div>
-      <div class="products">
-        <img
-          src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/at%2Fnews-culture%2F2019-11%2FTurkey_Hat"
-        />
-        <p>Chicken Hat</p>
-        <p>costs 8$</p>
-        <button onclick="addToCart(8)">Add To Cart</button>
-        <button onclick="addToWish(8)">♥</button>
-      </div>
-      <div class="products">
-        <img
-          src="https://media.istockphoto.com/id/1048496416/photo/happy-havanese-puppy-is-wearing-a-santa-hat.jpg?s=612x612&w=0&k=20&c=Bswt8XW-WxVtBWUSAWrB1X5wf1RuhlvQ1hikyhU3Ksw="
-        />
-        <p>Santa Hat</p>
-        <p>costs 5$</p>
-        <button onclick="addToCart(9)">Add To Cart</button>
-        <button onclick="addToWish(9)">♥</button>
-      </div>
+    <div class="products-container"></div>
     <a href="http://127.0.0.1:5500/allproducts.html"
       ><button class="button1">For More Items></button></a
     >
@@ -173,6 +94,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="storage.service.js"></script>
     <script type="text/javascript" src="products.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>

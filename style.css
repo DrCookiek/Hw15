@@ -80,7 +80,7 @@ h2 {
   font-size: 30px;
 }
 
-.store {
+.products-container {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(247, 238, 217);
@@ -143,14 +143,24 @@ h2 {
   flex-wrap: wrap;
   flex-direction: row; */
 }
-.hot {
+.card.hot {
   width: 31%;
   flex-basis: 30%;
   float: left;
   padding: 1%;
   margin: 0.5%;
-  background-color: rgb(181, 207, 207);
+  background-color: rgb(207, 181, 181);
   flex-direction: column;
+}
+
+.products-container > .products button {
+  border-radius: 6px;
+  font-size: 30px;
+}
+
+.card.hot button {
+  border-radius: 6px;
+  font-size: 20px;
 }
 
 .footer {
@@ -173,3 +183,6 @@ h2 {
   bottom: 10px; */
 }
 
+.in-wishlist {
+  background-color: red;
+}

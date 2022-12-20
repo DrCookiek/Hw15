@@ -33,50 +33,27 @@
       </div>
     </div>
     <h2>About us:</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel
-      risus finibus, auctor velit ac, congue augue. Vestibulum a congue ex. Ut
-      eleifend justo eu ipsum pellentesque tempus. Etiam laoreet egestas
-      sollicitudin. Morbi quis ex varius, rutrum leo at, euismod odio. Sed id
-      sollicitudin leo. Fusce tempor nisi ut urna eleifend, nec venenatis felis
-      fringilla. Ut vel fermentum leo, vel egestas urna. Cras semper urna vitae
-      ante consequat porta. Morbi pharetra erat risus, sit amet lobortis mi
-      pretium vitae. Vestibulum viverra sagittis ligula, sed pellentesque massa
-      cursus scelerisque. Nunc eget cursus urna. Ut mi lectus, hendrerit
-      tincidunt est quis, rutrum vestibulum elit. Donec varius, mauris vel
-      dictum efficitur, nulla magna molestie mauris, quis varius lacus odio in
-      eros. Mauris varius placerat libero in vulputate. Interdum et malesuada
-      fames ac ante ipsum primis in faucibus. Etiam sodales augue erat, et
-      porttitor elit pellentesque tincidunt. Fusce in interdum erat. Integer
-      auctor felis nec erat vestibulum porta. Praesent cursus eu lectus ac
-      suscipit. Pellentesque a porta erat. Nulla vitae felis nec felis porttitor
-      tempus. Sed id diam ut velit aliquet imperdiet vitae vitae nibh. Integer
-      lobortis lorem felis, non aliquam nibh volutpat ut. Vivamus leo erat,
-      vestibulum in vehicula a, pellentesque quis ex. Ut at sem tincidunt,
-      mollis velit vitae, dapibus risus. Fusce porttitor nulla non est placerat
-      viverra. Suspendisse pretium, odio eu ornare varius, ante lectus facilisis
-      lorem, eget ornare nisl dolor vel erat. Mauris suscipit at libero sit amet
-      rhoncus. Nunc fringilla feugiat interdum. Vestibulum nisi nisi, efficitur
-      ac nulla at, commodo commodo sem. Integer tempus mi massa. Curabitur ante
-      lectus, tristique id ultricies sit amet, tempor in nunc. Vivamus tempus
-      vitae urna faucibus auctor. Nulla commodo tristique est in semper.
-      Vestibulum id consectetur diam. Morbi convallis nisi sapien, vitae dapibus
-      odio dignissim eu. Nulla varius arcu lacus, sit amet hendrerit urna
-      venenatis nec. Donec sit amet velit lectus. Curabitur placerat elit nisl,
-      ac convallis diam blandit vitae. Class aptent taciti sociosqu ad litora
-      torquent per conubia nostra, per inceptos himenaeos. Proin eget erat sit
-      amet ligula imperdiet mollis a vel sem. Ut vehicula nisi sed dolor aliquam
-      imperdiet. Aenean vehicula mattis cursus. Maecenas et bibendum ipsum, a
-      semper ligula. Pellentesque habitant morbi tristique senectus et netus et
-      malesuada fames ac turpis egestas. Vestibulum sed nibh nibh. Maecenas ac
-      magna dapibus, sollicitudin est eu, hendrerit neque. Donec auctor libero
-      in vulputate egestas. Fusce et quam eleifend, volutpat libero vitae,
-      volutpat nisl. Nulla posuere risus quam. In ultrices euismod nisl, et
-      semper augue luctus in. In feugiat ipsum metus, et sollicitudin turpis
-      consequat tempus.
-    </p>
+    <form class="add-item-form">
+      <label
+        >Name:
+        <input type="text" name="name" />
+      </label>
+      <label>
+        Image Url:
+        <input type="text" name="image" />
+      </label>
+      <label>
+        Price:
+        <input type="text" name="price" />
+      </label>
+      <button type="submit">Add Your Product</button>
+    </form>
     <div class="footer">
       <p>first project Karin .K. December 2022</p>
     </div>
+
+    <script src="storage.service.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

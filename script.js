@@ -1,14 +1,3 @@
-// function btn(x) {
-//   price += x;
-//   alert("more products were added" + x + "$");
-// }
-
-// if (price >= 300) {
-//   alert(price * 0.9);
-// } else {
-//   alert(price);
-// }
-
 function renderProducts(type) {
   var products = getProducts(type);
   var store = document.querySelector(".products-container");
@@ -31,7 +20,7 @@ function setSearch(value) {
 }
 
 function shopView(product) {
-  return `<div class="products">
+  return `<div class="products" id="zoom">
   <img
     src="${product.image}"
   />
@@ -50,7 +39,8 @@ function cartView(product) {
   <img src="${product.image}" alt="">
   <div>
     <div>${product.name}</div>
-    <div>You have ${product.inCart} in your cart</div>
+    <div>costs ${product.price}$</div>
+    <div>${product.inCart} in your cart</div>
   </div>
 </div>
   `;

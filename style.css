@@ -14,7 +14,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .topnav a:hover {
@@ -34,7 +34,7 @@
 
 .topnav input[type="text"] {
   padding: 6px;
-  margin-top: 8px;
+  margin-top: 15px;
   font-size: 25px;
   border: none;
 }
@@ -42,10 +42,10 @@
 .topnav .search-container button {
   float: right;
   padding: 6px 10px;
-  margin-top: 8px;
+  margin-top: 15px;
   margin-right: 16px;
   background: #ddd;
-  font-size: 21.7px;
+  font-size: 21px;
   border: none;
   cursor: pointer;
 }
@@ -73,7 +73,7 @@
   }
 }
 
-/*  */
+/* /////////////////// */
 
 h2 {
   text-align: center;
@@ -83,13 +83,20 @@ h2 {
 .products-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(247, 238, 217);
   flex-direction: row;
 }
+
+#cart.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 25px;
+}
+
 .products {
   float: left;
   width: 30%;
-  background-color: rgb(172, 217, 202);
+  background-color: rgb(229, 200, 163);
   padding: 1%;
   margin: 1.6%;
   text-align: center;
@@ -102,13 +109,13 @@ p {
   font-size: 33px;
   text-align: center;
   color: #1a0325;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Sofia", sans-serif;
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(247, 238, 217);
+  background-image: linear-gradient(rgb(15, 12, 12), rgb(237, 126, 57));
 }
 
 h2 {
@@ -130,6 +137,7 @@ h2 {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
+  /* background-color: #e9d1ae; */
 }
 .hot img {
   width: 100%;
@@ -137,7 +145,7 @@ h2 {
 
 .banner-right {
   background-color: rgb(221, 131, 131);
-  width: 50%;
+  width: 60%;
   margin: 0.7%;
   /* display: flex;
   flex-wrap: wrap;
@@ -148,9 +156,36 @@ h2 {
   flex-basis: 30%;
   float: left;
   padding: 1%;
-  margin: 0.5%;
+  margin: 1%;
   background-color: rgb(207, 181, 181);
   flex-direction: column;
+}
+
+.card.hot p {
+  font-size: 25px;
+  font-family: "Sofia", sans-serif;
+}
+
+/* .products-container {
+  background-color: #e9d1ae;
+} */
+
+#zoom:hover img {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.6);
+  border: rgb(234, 178, 95);
+  border-radius: 20px;
+  border-style: solid;
+}
+
+.card.hot:hover img {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(2);
+  border: rgb(212, 163, 183);
+  border-radius: 20px;
+  border-style: solid;
 }
 
 .products-container > .products button {
@@ -163,6 +198,83 @@ h2 {
   font-size: 20px;
 }
 
+.button1 {
+  font-size: 25px;
+}
+
+.products button {
+  font-size: 130%;
+}
+
+.in-wishlist {
+  background-color: red;
+}
+
+#cart img {
+  width: 22%;
+}
+
+.cart-item {
+  background-color: antiquewhite;
+  padding: 20px;
+  margin: 20px;
+  text-align: initial;
+}
+
+.add-item-form {
+  text-align: center;
+  font-size: 45px;
+  border-top-style: double;
+  border-bottom-style: dotted;
+  border-left-style: dashed;
+  border-right-style: solid;
+  padding: 5%;
+  margin: 10%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  background-color: #e9d1ae;
+}
+
+.add-item-form button {
+  text-align: center;
+  font-size: 40px;
+}
+
+.contact-form button {
+  text-align: center;
+  font-size: 40px;
+  border-radius: 4%;
+  /* background-color: #b876d6; */
+}
+
+.add-item-form input[type="text"] {
+  font-size: 25px;
+}
+
+.contact-form {
+  text-align: center;
+  font-size: 45px;
+  border-top-style: double;
+  border-bottom-style: dotted;
+  border-left-style: dashed;
+  border-right-style: solid;
+  padding: 5%;
+  margin: 10%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  background-color: #eecbbc;
+}
+
+.contact-form #form-description {
+  font-size: x-large;
+  height: 180px;
+  /* text-align: left; */
+}
+
+.contact-form input[type="text"] {
+  font-size: 25px;
+}
+
 .footer {
   width: 100%;
   background-color: lightslategray;
@@ -172,17 +284,6 @@ h2 {
   padding: 1px;
 }
 
-.button1 {
-  font-size: 25px;
-}
-
-.products button {
-  font-size: 130%;
-  /* position: relative;
-  width: 50%;
-  bottom: 10px; */
-}
-
-.in-wishlist {
-  background-color: red;
+#button2 {
+  font-size: 30px;
 }

@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia"
-    />
     <link rel="stylesheet" href="style.css" />
-    <title>Products</title>
+    <title>About</title>
   </head>
-  <body onload="onLoad()">
+  <body>
     <div class="topnav">
       <div class="icon">
         <img
@@ -19,10 +15,10 @@
         />
       </div>
       <a href="http://127.0.0.1:5500/index.html#about">Home</a>
-      <a class="active" href="http://127.0.0.1:5500/allproducts.html"
-        >All-Products</a
+      <a href="http://127.0.0.1:5500/allproducts.html">All-Products</a>
+      <a class="active" href="http://127.0.0.1:5500/addproduct.html"
+        >Add-Product</a
       >
-      <a href="http://127.0.0.1:5500/addproduct.html">Add-Product</a>
       <a href="http://127.0.0.1:5500/contact.html">Contact</a>
       <a href="http://127.0.0.1:5500/wishList.html">♥Wish-List</a>
       <a href="http://127.0.0.1:5500/cart.html">Cart</a>
@@ -38,11 +34,35 @@
         </form>
       </div>
     </div>
-    <h2>All Products:</h2>
-    <div class="products-container"></div>
+    <h2>Add Your Product:</h2>
+    <form class="add-item-form">
+      <label
+        >Name:
+        <br />
+        <input type="text" name="name" placeholder="Product Name" />
+      </label>
+      <br />
+      <br />
+      <label>
+        Image Url:
+        <br />
+        <input type="text" name="image" placeholder="Add Url" />
+      </label>
+      <br />
+      <br />
+      <label>
+        Price:
+        <br />
+        <input type="text" name="price" placeholder="Product Price" />
+      </label>
+      <br />
+      <br />
+      <button type="submit">Add Your Product!</button>
+    </form>
     <div class="footer">
       <p>first project Karin .K. December 2022</p>
     </div>
+
     <script src="storage.service.js"></script>
     <script type="text/javascript" src="products.js"></script>
     <script type="text/javascript" src="script.js"></script>

@@ -101,17 +101,6 @@ const allProducts = [
     animal: "dog",
   },
   {
-    name: "matching set",
-    price: 25,
-    image:
-      "https://ae01.alicdn.com/kf/Sce49798910394ad58b80f032638e1137t/Outdoor-Travel-Windproof-Mask-Cap-Dog-Costumes-for-Large-Dogs-Ski-Mask-Dog-Hats-for-Dogs.jpg",
-    id: "p110",
-    inWishlist: false,
-    inCart: 0,
-    isFeatured: false,
-    animal: "dog",
-  },
-  {
     name: "Wizard Costume",
     price: 15,
     image:

@@ -29,7 +29,6 @@
 
 .topnav .search-container {
   float: right;
-  /* font-size: 40px; */
 }
 
 .topnav input[type="text"] {
@@ -53,6 +52,8 @@
 .topnav .search-container button:hover {
   background: #ccc;
 }
+
+/* header */
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
@@ -78,31 +79,7 @@
 h2 {
   text-align: center;
   font-size: 30px;
-}
-
-.products-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-#cart.products-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  font-size: 25px;
-}
-
-.products {
-  float: left;
-  width: 30%;
-  background-color: rgb(229, 200, 163);
-  padding: 1%;
-  margin: 1.6%;
-  text-align: center;
-}
-.products img {
-  width: 90%;
+  color: #b56ccb;
 }
 
 p {
@@ -118,13 +95,35 @@ body {
   background-image: linear-gradient(rgb(15, 12, 12), rgb(237, 126, 57));
 }
 
-h2 {
-  color: #b56ccb;
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* #cart.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 25px;
+} */
+
+.products {
+  float: left;
+  width: 30%;
+  background-color: rgb(229, 200, 163);
+  padding: 1%;
+  margin: 1.6%;
+  text-align: center;
+}
+.products img {
+  width: 90%;
 }
 
 .icon img {
   width: 66px;
   float: left;
+  object-fit: cover;
 }
 
 .welcome img {
@@ -137,7 +136,6 @@ h2 {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  /* background-color: #e9d1ae; */
 }
 .hot img {
   width: 100%;
@@ -147,9 +145,6 @@ h2 {
   background-color: rgb(221, 131, 131);
   width: 60%;
   margin: 0.7%;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; */
 }
 .card.hot {
   width: 31%;
@@ -166,23 +161,19 @@ h2 {
   font-family: "Sofia", sans-serif;
 }
 
-/* .products-container {
-  background-color: #e9d1ae;
-} */
-
 #zoom:hover img {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.6);
+  transform: scale(1.1);
   border: rgb(234, 178, 95);
   border-radius: 20px;
   border-style: solid;
 }
 
 .card.hot:hover img {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(2);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
   border: rgb(212, 163, 183);
   border-radius: 20px;
   border-style: solid;
@@ -244,7 +235,6 @@ h2 {
   text-align: center;
   font-size: 40px;
   border-radius: 4%;
-  /* background-color: #b876d6; */
 }
 
 .add-item-form input[type="text"] {
@@ -268,7 +258,6 @@ h2 {
 .contact-form #form-description {
   font-size: x-large;
   height: 180px;
-  /* text-align: left; */
 }
 
 .contact-form input[type="text"] {

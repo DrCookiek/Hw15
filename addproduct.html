@@ -14,14 +14,14 @@
           src="https://cdn.discordapp.com/attachments/292294870649798677/1053445660046786641/Konstore.jpg"
         />
       </div>
-      <a href="http://127.0.0.1:5500/index.html#about">Home</a>
-      <a href="http://127.0.0.1:5500/allproducts.html">All-Products</a>
-      <a class="active" href="http://127.0.0.1:5500/addproduct.html"
-        >Add-Product</a
+      <a data-tab="home" href="index.html#about">Home</a>
+      <a data-tab="all" href="allproducts.html">All-Products</a>
+      <a href="addproduct.html" class="active">Add-Product</a>
+      <a href="contact.html">Contact</a>
+      <a data-tab="wishlist" href="http://127.0.0.1:5500/wishList.html"
+        >♥Wish-List</a
       >
-      <a href="http://127.0.0.1:5500/contact.html">Contact</a>
-      <a href="http://127.0.0.1:5500/wishList.html">♥Wish-List</a>
-      <a href="http://127.0.0.1:5500/cart.html">Cart</a>
+      <a data-tab="cart" href="http://127.0.0.1:5500/cart.html">Cart</a>
       <div class="search-container">
         <form>
           <input
@@ -34,31 +34,34 @@
         </form>
       </div>
     </div>
-    <h2>Add Your Product:</h2>
-    <form class="add-item-form">
-      <label
-        >Name:
+
+    <div>
+      <h2>Add Your Product:</h2>
+      <form class="add-item-form">
+        <label
+          >Name:
+          <br />
+          <input type="text" name="name" placeholder="Product Name" />
+        </label>
         <br />
-        <input type="text" name="name" placeholder="Product Name" />
-      </label>
-      <br />
-      <br />
-      <label>
-        Image Url:
         <br />
-        <input type="text" name="image" placeholder="Add Url" />
-      </label>
-      <br />
-      <br />
-      <label>
-        Price:
+        <label>
+          Image Url:
+          <br />
+          <input type="text" name="image" placeholder="Add Url" />
+        </label>
         <br />
-        <input type="text" name="price" placeholder="Product Price" />
-      </label>
-      <br />
-      <br />
-      <button type="submit">Add Your Product!</button>
-    </form>
+        <br />
+        <label>
+          Price:
+          <br />
+          <input type="text" name="price" placeholder="Product Price" />
+        </label>
+        <br />
+        <br />
+        <button type="submit">Add Your Product!</button>
+      </form>
+    </div>
     <div class="footer">
       <p>first project Karin .K. December 2022</p>
     </div>

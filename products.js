@@ -406,23 +406,6 @@ function createProducts() {
   }
 }
 
-function getProducts(type) {
-  var filteredProducts = gProducts.filter((product) => {
-    var regExTerm = new RegExp(filter);
-    return regExTerm.test(product.name.toLowerCase());
-  });
-
-  if (type) {
-    filteredProducts = filteredProducts.filter((product) => {
-      if (type === "featured") return product.isFeatured;
-      if (type === "wishlist") return product.inWishlist;
-      if (type === "cart") return product.inCart;
-    });
-  }
-
-  return filteredProducts;
-}
-
 function setFilter(value) {
   filter = value;
 }

@@ -1,47 +1,26 @@
-function renderProducts(type) {
-  var products = getProducts(type);
-  var store = document.querySelector(".products-container");
-  var htmlText = products
-    .map((product) => {
-      if (type === "cart") return cartView(product);
-      else return shopView(product);
-    })
-    .join("");
-  store.innerHTML = htmlText;
-}
+import { StoreManager } from "./Classes/StoreManager.js";
+let gStore = null;
 
-function onLoad(type = null) {
-  renderProducts(type);
-}
+window.onload = function () {
+  const currentTab = document.querySelector(".active").dataset.tab;
+  gStore = new StoreManager();
+  gStore.renderProducts(currentTab);
+};
 
-function setSearch(value) {
-  setFilter(value);
-  renderProducts();
-}
+window.setSearch = function (value) {
+  const currentTab = document.querySelector(".active").dataset.tab;
+  gStore.setFilter(value);
+  gStore.renderProducts(currentTab);
+};
 
-function shopView(product) {
-  return `<div class="products" id="zoom">
-  <img
-    src="${product.image}"
-  />
-  <p>${product.name}</p>
-  <p>costs ${product.price}$</p>
-  <button onclick="addToCart('${product.id}')">Add to cart</button>
-  <button class=${
-    product.inWishlist ? "in-wishlist" : "none"
-  } onclick="addToWishlist('${product.id}')">♥</button>
-  
-</div>`;
-}
+window.addToWishlist = function (productId) {
+  const currentTab = document.querySelector(".active").dataset.tab;
+  gStore.addToWishlist(productId);
+  gStore.renderProducts(currentTab);
+};
 
-function cartView(product) {
-  return `<div class="cart-item">
-  <img src="${product.image}" alt="">
-  <div>
-    <div>${product.name}</div>
-    <div>costs ${product.price}$</div>
-    <div>${product.inCart} in your cart</div>
-  </div>
-</div>
-  `;
-}
+window.addToCart = function (productId) {
+  const currentTab = document.querySelector(".active").dataset.tab;
+  gStore.addToCart(productId);
+  gStore.renderProducts(currentTab);
+};

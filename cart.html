@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="style.css" />
     <title>Cart</title>
   </head>
-  <body onload="onLoad('cart')">
+  <body onload="onLoad">
     <div class="topnav">
       <div class="icon">
         <img
           src="https://cdn.discordapp.com/attachments/292294870649798677/1053445660046786641/Konstore.jpg"
         />
       </div>
-      <a href="http://127.0.0.1:5500/index.html#about">Home</a>
-      <a href="http://127.0.0.1:5500/allproducts.html">All-Products</a>
-      <a href="http://127.0.0.1:5500/addproduct.html">Add-Product</a>
-      <a href="http://127.0.0.1:5500/contact.html">Contact</a>
-      <a href="http://127.0.0.1:5500/wishList.html">♥Wish-List</a>
-      <a class="active" href="http://127.0.0.1:5500/cart.html">Cart</a>
+      <a data-tab="home" href="index.html#about">Home</a>
+      <a data-tab="all" href="allproducts.html">All-Products</a>
+      <a href="addproduct.html">Add-Product</a>
+      <a href="contact.html">Contact</a>
+      <a data-tab="wishlist" href="http://127.0.0.1:5500/wishList.html"
+        >♥Wish-List</a
+      >
+      <a data-tab="cart" href="http://127.0.0.1:5500/cart.html" class="active"
+        >Cart</a
+      >
       <div class="search-container">
         <form>
           <input
@@ -32,15 +36,18 @@
         </form>
       </div>
     </div>
-    <h2>Cart:</h2>
-    <div id="cart" class="products-container"></div>
-    <br />
-    <button id="button2" onclick="CheckOut()">Check Out</button>
-    <script src="storage.service.js"></script>
-    <script type="text/javascript" src="products.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <div>
+      <h2>Cart:</h2>
+      <div id="cart" class="products-container"></div>
+      <br />
+      <button id="button2" onclick="CheckOut()">Check Out</button>
+    </div>
+
     <div class="footer">
       <p>first project Karin .K. December 2022</p>
     </div>
+    <script src="storage.service.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

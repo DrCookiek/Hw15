@@ -1,4 +1,4 @@
-class product {
+export class Product {
   constructor(name, price, image, inWishlist, id, inCart, isFeatured, animal) {
     this.name = name;
     this.price = price;
@@ -9,21 +9,29 @@ class product {
     this.isFeatured = isFeatured;
     this.animal = animal;
   }
-}
 
-class productFactory {
-  constructor() {
-    this.latest_id = 100;
+  setInWishList() {
+    this.inWishlist = !this.inWishlist;
   }
 
-  getNewId() {
-    id = `p  + ${this.latest_id}`;
-    this.latest_id++;
-    return id;
-  }
-
-  createProduct(name, price, image, animal) {
-    id = this.getNewId();
-    let p = product(name, price, image, false, id, false, false, animal);
+  addToCart() {
+    this.inCart++;
   }
 }
+
+// export class ProductFactory {
+//   constructor() {
+//     this.latest_id = 100;
+//   }
+
+//   getNewId() {
+//     id = `p  + ${this.latest_id}`;
+//     this.latest_id++;
+//     return id;
+//   }
+
+//   createProduct(name, price, image, animal) {
+//     id = this.getNewId();
+//     let p = Product(name, price, image, false, id, false, false, animal);
+//   }
+// }

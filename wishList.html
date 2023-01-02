@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="style.css" />
     <title>Wish List</title>
   </head>
-  <body onload="onLoad('wishlist')">
+  <body>
     <div class="topnav">
       <div class="icon">
         <img
           src="https://cdn.discordapp.com/attachments/292294870649798677/1053445660046786641/Konstore.jpg"
         />
       </div>
-      <a href="index.html#about">Home</a>
-      <a href="allproducts.html">All-Products</a>
+      <a data-tab="home" href="index.html#about">Home</a>
+      <a data-tab="all" href="allproducts.html">All-Products</a>
       <a href="addproduct.html">Add-Product</a>
       <a href="contact.html">Contact</a>
-      <a class="active" href="http://127.0.0.1:5500/wishList.html"
+      <a
+        data-tab="wishlist"
+        class="active"
+        href="http://127.0.0.1:5500/wishList.html"
         >♥Wish-List</a
       >
-      <a href="http://127.0.0.1:5500/cart.html">Cart</a>
+      <a data-tab="cart" href="http://127.0.0.1:5500/cart.html">Cart</a>
       <div class="search-container">
         <form>
           <input
@@ -37,10 +40,10 @@
     <h2>Wish List:</h2>
     <div class="products-container"></div>
     <div class="footer">
-      <p>first project Karin .K. December 2022</p>
+      <p>First project Karin .K. December 2022</p>
     </div>
-    <script src="storage.service.js"></script>
-    <script type="text/javascript" src="products.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script src="storage.service.js"></script>
+    <script type="text/javascript" src="products.js"></script> -->
+    <script type="module" src="script.js"></script>
   </body>
 </html>

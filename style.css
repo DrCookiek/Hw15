@@ -90,7 +90,7 @@ p {
 }
 
 body {
-  display: grid;
+  /* display: grid; */
   grid-template-rows: 75px 1fr 70px;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -105,12 +105,20 @@ body {
   flex-direction: row;
 }
 
-/* #cart.products-container {
+#cart.products-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   font-size: 25px;
-} */
+  margin: 2%;
+  padding: 0%;
+  width: 20%;
+  height: 30%;
+}
+
+#cart.products-container img {
+  width: 40%;
+}
 
 .products {
   float: left;
